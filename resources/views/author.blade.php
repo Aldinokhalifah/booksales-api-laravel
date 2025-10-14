@@ -11,7 +11,10 @@
     <ol>
         <h2>Author yang tersedia:</h2>
         @foreach ($authors as $author)
-            <li>{{$author}}</li>
+            <li>
+                <strong>Nama</strong>: {{$author['name']}} <br>
+                <strong>Bio</strong>: {{$author['bio']}}
+            </li>
         @endforeach
     </ol>
 </body>
