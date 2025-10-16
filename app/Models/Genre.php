@@ -6,15 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Genre extends Model
 {
-    protected $genres = [
-        'Romance',
-        'Adventure',
-        'Science Fiction',
-        'Thriller',
-        'Horor'
-    ];
+    protected $table = 'genres';
 
-    public function getGenres() {
-        return $this->genres;
-    }
+    protected $fillable = ['name', 'description'];
 }
