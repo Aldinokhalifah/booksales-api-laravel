@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->integer('price');
-            $table->integer('atock');
+            $table->integer('stock');
             $table->string('cover_photo');
             $table->string('author');
             $table->unsignedBigInteger('genre_id');
